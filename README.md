@@ -12,7 +12,7 @@ Available on Docker Hub at [lfdev/butler](https://hub.docker.com/r/lfdev/butler)
 docker run \
   -v ./build:/build \
   -e BUTLER_API_KEY=<YOUR API KEY> \
-  lfdev/butler butler push ~/build <USER>/<PROJECT>:<CHANNEL>
+  lfdev/butler butler push /build <USER>/<PROJECT>:<CHANNEL>
 ```
 
 Mount the path to your build output (e.g. `./build`) to a known folder in the container (e.g. `/build`).
